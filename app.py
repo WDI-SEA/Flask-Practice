@@ -15,7 +15,7 @@ def greeting():
 
 @app.route('/pie', methods=('GET', 'POST'))
 def pie():
-    return jsonify(ingredients)
+    return jsonify({'pie ingredient': ingredients[0]})
 
 @app.route('/recipe', methods=('GET', 'POST'))
 def recipe():
