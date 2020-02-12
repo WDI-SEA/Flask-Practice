@@ -1,0 +1,16 @@
+<h1>This is the Full Recipe page</h1>
+
+<h2>The name of this pie recipe is: {{ recipe }}</h2>
+
+<h4>These are all the current ingredients:</h4>
+
+<p> {{ ingredients }} </p>
+
+
+<h2>Add a new ingredient to this pie recipe</h2>
+<form action="/recipe" method="POST">
+    <label for="ingredient">Ingredient Name:</label>
+    <input type="text" name="ingredient" id="ingredient">
+    <button type="submit">Add Ingredient</button>
+</form>
+
