@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>Pie Ingredients</h1>
+
+{% for i in ingredients: %}
+    <h3>{{ i }}</h3>
+{% endfor %}
+
+<hr>
+
+<h1>Add An Ingredient</h1>
+<form action="/recipe" method="POST">
+    <label>What ingredient would you like to add?</label>
+    <input type="text" name="ingredient"/>
+    <input type="submit" value="+"/>
+
+</form>
+
+
+{% endblock %}
