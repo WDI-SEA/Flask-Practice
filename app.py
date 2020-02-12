@@ -13,9 +13,9 @@ def greeting():
     my_name = 'David'
     return render_template('index.html', my_name=my_name) 
 
-@app.route('/pie')
+@app.route('/pie', methods=('GET', 'POST'))
 def pie():
-    return jsonify({'pie ingredient': 'ingredients[0]'})
+    return jsonify(ingredients)
 
 @app.route('/recipe', methods=('GET', 'POST'))
 def recipe():
