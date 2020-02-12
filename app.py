@@ -8,6 +8,9 @@ app = Flask(__name__)
 def home():
     return 'Hello World!'
 
+@app.route('/greeting')
+def greeting():
+    return render_template('index.html', name='Akilah')
 
 # Get the server up and running
 if __name__ == '__main__':
