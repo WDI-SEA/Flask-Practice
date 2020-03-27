@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pie Page</title>
+        <link type="text/css" rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Enter pie ingredients and submit</h1>
+        <form method="POST" action="{{ url_for('pie') }}">
+            <input type="text" name="ingredient">
+            <input type="submit">
+        </form>
+    </body>
+</html>
