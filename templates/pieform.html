@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Form</title>
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form method="POST" action="{{ url_for('pie') }}">
+        <fieldset>
+            <legend>
+                <h1>
+                    Gimme an ingredient
+                </h1>
+            </legend>
+            <input type="text" name="ingredient">
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
