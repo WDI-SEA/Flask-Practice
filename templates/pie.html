@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <title>An Irrational Love of Pie</title>
+</head>
+<body>
+    <h1>Here are the ingredients to make {{name}} pie:</h1>
+    <ul>
+        <!-- I need a for loop here to iterate through my list of ingredients at index i -->
+        {% for i in ingredients %}
+        <li>{{ingredients[i]}}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Enter new ingredients below: </h2>
+    <form action="POST" name="ingredient">
+        <input type="text" name="ingredient" id="ingredient">
+        <button type="submit">+</button>
+    </form>
+</body>
+</html>
