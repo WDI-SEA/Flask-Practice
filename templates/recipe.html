@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>RECIPES PAGE</h1>
+  <h3>{{name.upper()}}:</h3>
+  <p>Contains {{ingredient_1}}, {{ingredient_2}}, and {{ingredient_3}}</p>
+  <h1>Create a new RECIPE:</h1>
+  <form method="POST" action="/recipe">
+    <label for="name">Pie Name:</label>
+    <input type="text" name="name">
+    <label for="ing_1">First Ingredient:</label>
+    <input type="text" name="ing_1">
+    <label for="ing_2">Second Ingredient:</label>
+    <input type="text" name="ing_2">
+    <label for="ing_3">Third Ingredient:</label>
+    <input type="text" name="ing_3">
+    <button type="submit">SUBMIT</button>
+  </form>
+</body>
+</html>
+<!-- 
+GET	/recipe	Render a template that shows the name of a pie, all ingredients, and a new ingredient form
+POST	/recipe	The form from the GET page sends a new ingredient. Add this to your ingredients list then redirect back to /recipe -->
