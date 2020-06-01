@@ -1,6 +1,7 @@
 from flask import Flask, render_template,jsonify,request
 from random import randint
 app = Flask(__name__)
+app.config['DEBUG'] = True
 
 #Problem 1: Hello World
 @app.route("/")
