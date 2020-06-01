@@ -33,7 +33,7 @@ def pie_random():
 # Bonus: The POST Man Deliverth
 @app.route("/recipe", methods = ['POST', 'GET'])
 def recipe():
-    pie={'name':'Apple pie', 'ingredients' : ['flour','sugar']
+    pie={'name':'Apple pie', 'ingredients' : ['flour','sugar','butter','apple']
             }
     pie_ingredient = ''        
     if request.method == 'POST':
