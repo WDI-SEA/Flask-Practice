@@ -8,6 +8,7 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 @app.route('/')
+def sayHello():
     return "hello World"
 @app.route('/<name>')
 def hello(name=None):
