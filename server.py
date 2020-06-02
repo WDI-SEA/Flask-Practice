@@ -20,15 +20,15 @@ def greeting(name):
 
 # Problem 4: A Detective, A PI
 ingredients = ['apples','pineapple','mangoes']
-@app.route("/pie")
+@app.route("/pie_test")
 def pie():
     return jsonify({'pie ingredient': ingredients[0]})    
 
 # Bonus on Problem 4
-ingredients = ['apples','pineapple','mangoes']
-@app.route("/piee")
+ingredients = ['apples','pineapple','mangoes','flour','sugar','butter']
+@app.route("/pie")
 def pie_random():
-    index = randint(0,2)
+    index = randint(0,len(ingredients)-1)
     return jsonify({'pie ingredient': ingredients[index]})     
 
 # Bonus: The POST Man Deliverth
