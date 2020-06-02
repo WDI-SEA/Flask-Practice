@@ -55,7 +55,7 @@ flask run
 
 ### Skill You're Practicing: Creating a Flask app from scratch
 
-Set up a Flask app skeleton. This will include making a python server file - this will be named something like `app.py`. 
+Set up a Flask app skeleton. This will include making a python server file - this will be named something like `app.py`.
 
 `app.py` should include the following:
 
@@ -123,7 +123,7 @@ project
 
 ### Skill You're Practicing: Serving Static Files
 
-Create a `static` folder in the top-level of your project directory. This is where files like CSS, images, audio, and front-end JavaScript live. Inside your `static` folder, create a file called `style.css`. 
+Create a `static` folder in the top-level of your project directory. This is where files like CSS, images, audio, and front-end JavaScript live. Inside your `static` folder, create a file called `style.css`.
 
 In your `style.css` file, add some styling to change the color of your text to green (or any color other than the default!). Last, add a link tag in your index.html template to `/static/style.css`. Unlike some other languages, "static" is part of the url path.
 
@@ -131,7 +131,7 @@ In your `style.css` file, add some styling to change the color of your text to g
 <link type="text/css" rel="stylesheet" href="/static/style.css">
 ```
 
-Go check your browser to see if your changes took effect. 
+Go check your browser to see if your changes took effect.
 
 > Note: You may have to do a hard reload (Mac Shortcut: Command + Shift + R)
 
@@ -212,7 +212,7 @@ Remember to import the `redirect` module.
 
 **Hint 2:**
 
-You can access the method (the HTTP verb) via `request.method`. 
+You can access the method (the HTTP verb) via `request.method`.
 
 **Hint 3:**
 
