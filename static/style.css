@@ -1,0 +1,12 @@
+body{
+    background-color: papayawhip;
+}
+h1 {
+    color: royalblue;
+}
+.center {
+    text-align: center;
+}
+.upper-case {
+    text-transform: uppercase;
+}
