@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recipe for {{recipe}} </h1>
+    <ul>
+    {% for item in ingredients %}
+        <li> {{ item }} </li>
+    {% endfor %}
+    </ul>
+
+    <form method="POST" action='/recipe'>
+        <label> Think there should be a new ingredient? </label>
+        <input type="text" name="newIngredient">
+        <input type="submit" name="submit" value="Add">
+    </form>
+</body>
+</html>
