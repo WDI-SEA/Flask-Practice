@@ -41,7 +41,7 @@ def recipe():
       pie_ingredient = request.form['ingredient']
       print('pie_ingredient',pie_ingredient)
       pie['ingredients'].append(pie_ingredient)
-    #else:
+    
     return render_template("recipe.html", pie=pie) 
 
 
