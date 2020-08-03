@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: large;
+    color: rebeccapurple;
+    font-style: oblique;
+}
