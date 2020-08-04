@@ -7,12 +7,21 @@
     <title>RECIPE</title>
 </head>
 <body>
-    <h1>Recipe for {{ recipe['name'] }}</h1>
+    <h2>Recipe for {{ recipe['name'] }}</h1>
     <ul>
         {% for ingredient in recipe['ingredients'] %}
             <li>
-                <h2>{{ ingredient }}</h2>
+                <h3>{{ ingredient }}</h3>
             </li>
         {% endfor %}
+        <li>
+            <form action="{{ url_for('add_ingredient') }}" method="POST" >
+                <input type="text" id="new_ingredient" name="new_ingredient">
+                <input type="submit" value="Make More Delicious">
+                <label class="hidden" for="new_ingredient">new ingredient:</label>
+            </form>
+        </li>
+    </ul>
+
 </body>
 </html>
