@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>make me a tasty tasty pieeeee</title>
+    <title>make me a tasty tasty pieeeee - add an ingredient</title>
     <link type="text/css" rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    
+    <h1>Add Ingredient for Pie</h1>
+    <form action="{{ url_for('make_pie') }}">
+        <input type="text" name="ingredient">
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <h3>Current Ingredients Include:</h3>
+    <p>{{ ingredient }}</p>
 </body>
 </html>

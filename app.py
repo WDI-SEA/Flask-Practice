@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 app = Flask(__name__)
 
 @app.route('/')
@@ -14,12 +14,28 @@ def hellooooo():
 def greeting(name):
     return render_template('index.html', name=name)
 
+
 # # return a JSON object that contains a key-value pair
-@app.route('/pie')
+ingredients = ["apple", "cherry", "banana cream", "oreo", "vanilla custard", "chokeberry", "peach", "rhubarb"]
+
+@app.route('/pie', methods=["GET", "POST"])
+
 def make_pie():
-    import random
-    ingredients = ["apple", "cherry", "banana cream", "oreo", "vanilla custard", "chokeberry", "peach", "rhubarb"]
-    return jsonify("your pie type: ", random.choice(ingredients))
+    global ingredients
+    if request.method == "POST":
+
+        new_ingredient = request.form('ingredient')
+
+        ingredients.append(new_ingredient)
+
+        return f"{ingredients}"
+    else:
+        import random
+        # apparently computers can't return a truly random integer
+
+        index = random.randint(0, (len(ingredients) -1))
+
+        return render_template("recipe.html", ingredient=ingredients[index])
 
 
 
