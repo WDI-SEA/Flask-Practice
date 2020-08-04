@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>awesome recipe viewer</title>
+  </head>
+
+  <body>
+    <div class="titleContainer">
+      <h1>Recipe Viewer:</h1>
+      <h3>(Currently ingredients viewer:</h3>
+    </div>
+    <br><br>
+    <div class="recipeContainer">
+      <!-- iterative loop in flask! please note that this will be refactored to display single pies' ingredients instead of a big ol' chonk...-->
+      {% for key, value in ingredients.items() %}
+      <p>{{ value }}</p>
+      {% endfor %}
+    </div>
+    <div class="formContainer">
+      <h1>Enter an ingredient to enter into the catalog.</h1>
+    </div>
+    <div>
+      <form action="" method="POST">
+        <label for="ingredient">Add an ingredient</label>
+        <input type="text" name="ingredient">
+        <input type="submit">
+      </form>
+    </div>
+  </body>
+  <footer>
+    <div class="footer">
+      <h6>2020 General Assembly: Louis Reilly-Willhight</h6>
+    </div>
+  </footer>
+
+</html>

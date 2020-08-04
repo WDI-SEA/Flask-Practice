@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>HELLO THAR</title>
+    </head>
+    <body>
+        <div class="greetingContainer">
+            <h1>WELCOME TO LOUIE'S KILLER APP</h1>
+            <br><br>
+            <h4>In this app, you receive a personalized greeting!</h4>
+            <br><br>
+            <p>Hi there, {{ name }}! Looking good! </p>
+        </div>
+    </body>
+</html>
