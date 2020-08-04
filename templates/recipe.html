@@ -7,6 +7,12 @@
     <title>Flask Rulez</title>
 </head>
 <body>
-    <h3>Hi there, {{ name }}! It's great to see you today.</h3>
+    <h2>{{name}} pie recipe:</h2>
+    <p>Ingredients: {{ingredients}}</p>
+    <form action="/recipe/{{name}}" method="POST">
+        <label for="ingredient">Add ingredient:</label>
+        <input type="text" name="ingredient">
+        <input type="submit">
+    </form>
 </body>
 </html>
