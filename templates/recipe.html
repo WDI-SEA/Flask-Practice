@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Recipe</title>
+</head>
+<body>
+    <h2> Welcome to Sal's Pie Recipe website</h2>
+    <h4> Here, we cut the bs life story and get straight to the recipe</h4>
+    <p> Here is my Apple pie</p>
+    <div class="pie-info">
+        <p> Ingredients:</p>
+            <ul>
+                <li>Apples</li>
+                <li>Milk</li>
+                <li>Dough</li>
+                <li>Tears</li>
+                <li>Butts</li>
+            </ul>
+    </div>
+    {% %}
+    <div class="pie-form">
+        <h3> Submit Your Pie Recipe:</h3>
+        <form method="POST" action="/recipe">
+            <label for="pie">What pie are we making?</label>
+            <input type="text" id="pie" name="name" />
+            <br />
+            <label for="ingredient">What do we need to make it?</label>
+            <input type="text" id="ingredient" name="ingredient" />
+            <br />
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
