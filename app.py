@@ -17,6 +17,6 @@ def greeting(name):
 
 @app.route('/pie')
 def pie():
-    ingredients = ["apples","pumkins", "peaches"]
+    ingredients = ["apples","sugar", "flour"]
     index = random.randint(0,2)
     return jsonify({'pie ingredient': ingredients[index]})
