@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
+import random
 app = Flask(__name__)
 
 @app.route('/')
@@ -15,3 +16,7 @@ def greeting(name):
 
 
 @app.route('/pie')
+def pie():
+    ingredients = ["apples","pumkins", "peaches"]
+    index = random.randint(0,2)
+    return jsonify({'pie ingredient': ingredients[index]})
