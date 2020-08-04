@@ -11,5 +11,5 @@ def greeting(name):
 
 @app.route('/pie')
 def pie():
-    ingredients = "banana", "cream", "almond", "vanilla", "cinnamon"
-    return jsonify({'pie ingredient': ingredients})
+    ingredients = ["banana", "cream", "almond", "vanilla", "cinnamon"]
+    return jsonify({'pie_ingredient': ingredients})
