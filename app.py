@@ -30,7 +30,6 @@ def recipe(pie):
             return render_template('recipe.html', name = pie, ingredients = recipes[pie])
     if (request.method == 'POST'):
         new_ingredient = request.form['ingredient']
-        redirect_key = request.form['redirect']
         for recipe in recipes:
             recipes[pie].append(new_ingredient)
             return redirect(f'/recipe/{pie}')
