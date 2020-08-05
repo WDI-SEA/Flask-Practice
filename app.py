@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, jsonify, request,
+from flask import Flask, redirect, render_template, jsonify, request
 app = Flask(__name__)
 import random
 
@@ -31,10 +31,11 @@ ingredients = ["pie tin"]
 def recipes():
     global ingredients
     if request.method =='POST':
-        new_ingredient = request.form('ingredient')
+        new_ingredient = request.form['ingredient']
+        print(new_ingredient)
         ingredients.append(new_ingredient)
-        redirect('/recipes', method=[GET])
-    return render_template('recipes/view.html', ingredients = ingredients)
+        redirect('/recipes')
+    return render_template('recipes.html', ingredients = ingredients)
 
 #GET /pie
 #return a pie json object

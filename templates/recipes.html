@@ -15,15 +15,15 @@
     <br><br>
     <div class="recipeContainer">
       <!-- iterative loop in flask! please note that this will be refactored to display single pies' ingredients instead of a big ol' chonk...-->
-      {% for key, value in ingredients.items() %}
-      <p>{{ value }}</p>
+      {% for item in ingredients %}
+      <p>{{ item }}</p>
       {% endfor %}
     </div>
     <div class="formContainer">
       <h1>Enter an ingredient to enter into the catalog.</h1>
     </div>
     <div>
-      <form action="" method="POST">
+      <form action="{{ url_for('recipes') }}" method="POST">
         <label for="ingredient">Add an ingredient</label>
         <input type="text" name="ingredient">
         <input type="submit">
