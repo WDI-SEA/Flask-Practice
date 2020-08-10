@@ -1,0 +1,20 @@
+{
+  "name": "Flask-Practice",
+  "version": "1.0.0",
+  "description": "This assignment was adapted from this [homework](https://git.generalassemb.ly/python-programming/python-programming/tree/revisions_v2.1/unit-6-flask/instructor-resources/hw-5day-4flask) from [GA's Python Part-Time](https://generalassemb.ly/education/python-programming) course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelderop/Flask-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelderop/Flask-Practice/issues"
+  },
+  "homepage": "https://github.com/thelderop/Flask-Practice#readme"
+}
